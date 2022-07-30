@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Navigator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Photos/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="Photos/logo.svg" alt="Logo">
+        <img id="menu-icon" src="Photos/icon-menu.svg" alt="Menu">
+    </header>
+    <nav>
+        <section class="window">
+            <img id='x-mark' src="Photos/icon-close-menu.svg" alt="X">
+            <button id="features">Features<img src="Photos/icon-arrow-down.svg"><img class="hidden" src="Photos/icon-arrow-up.svg"></button>
+            <ul class="features-menu">
+                <li><img src="Photos/icon-todo.svg" alt="">Todo List</li>
+                <li><img src="Photos/icon-calendar.svg" alt="">Calendar</li>
+                <li><img src="Photos/icon-reminders.svg" alt="">Reminders</li>
+                <li><img src="Photos/icon-planning.svg" alt="">Planning</li>
+            </ul>
+            <button id="company">Company<img src="Photos/icon-arrow-down.svg"><img class="hidden" src="Photos/icon-arrow-up.svg"></button>
+            <ul class="company-menu">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+            </ul>
+            <button>Careers</button>
+            <button>About</button>
+            <section class="log-in">
+                <button>Login</button>
+                <button class="register">Register</button>
+            </section>
+        </section>
+    </nav>
+    <main>
+        <picture>
+            <source media="(max-width: 1000px)" srcset="Photos/image-hero-mobile.png">
+            <img src="Photos/image-hero-desktop.png" alt="">
+        </picture>
+        <article>
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar</p>
+            <button>Learn more</button>
+            <section>
+                <img src="Photos/client-databiz.svg" alt="databiz">
+                <img src="Photos/client-audiophile.svg" alt="audiophile">
+                <img src="Photos/client-meet.svg" alt="meet">
+                <img src="Photos/client-maker.svg" alt="maker">
+            </section>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

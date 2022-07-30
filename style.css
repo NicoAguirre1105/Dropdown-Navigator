@@ -1,0 +1,395 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    --almost_white: hsl(0, 0%, 98%);
+    --medium_gray: hsl(0, 0%, 41%);
+    --almost_black: hsl(0, 0%, 8%);
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--almost_white);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Header */
+/* Header */
+/* Header */
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    padding: 3.5vh 5vw 2.5px 5vw;
+    background-color: var(--almost_white);
+}
+
+header img {
+    margin: 0 auto auto auto;
+}
+
+#logo {
+    height: 3.7vh;
+    margin-left: 0;
+}
+
+#menu-icon {
+    height: 2.5vh;
+    width: 4vh;
+    margin-right: 0;
+}
+
+/* Menu */
+/* Menu */
+
+nav {
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0.7);
+}
+
+nav .window {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+    margin-right: 0;
+    height: 100%;
+    background-color: var(--almost_white);
+    padding: 20px 5vw 20px 6vw;
+}
+
+.window #x-mark {
+    height: 3.5vh;
+    width: 3.5vh;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.window button {
+    display: flex;
+    height: 45px;
+    font-size: 16px;
+    color: var(--medium_gray);
+    border: none;
+    background-color: var(--almost_white);
+    text-align: left;
+    align-items: center;
+    cursor: pointer;
+}
+
+.window button:hover {
+    color: var(--almost_black);
+}
+
+.window button img {
+    margin: auto;
+    margin-left: 10px;
+}
+
+.window section {
+    display: flex;
+    flex-direction: column;
+}
+
+.window .log-in button {
+    display: flex;
+    justify-content: center;
+}
+
+.log-in .register {
+    border: var(--medium_gray) solid 2px;
+    border-radius: 15px;
+}
+
+.log-in .register:hover {
+    border-color: var(--almost_black);
+}
+
+/* Dropdown Menu */
+
+.window ul {
+    display: none;
+    list-style: none;
+    margin: 2px 0 ;
+    margin-left: 20px;
+}
+
+.window li {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    color: var(--medium_gray);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.window li img {
+    height: 20px;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* Main */
+/* Main */
+/* Main */
+
+/* Picture */
+/* Picture */
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 88vh;
+    background-color: var(--almost_white);
+}
+
+main picture {
+    width: 100%;
+    height: 37vh;
+}
+
+main picture source, 
+picture img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Text */
+/* Text */
+
+main article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 6vh 0;
+    padding: 0 5vw;
+}
+
+article h1 {
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: var(--almost_black);
+}
+
+article p {
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 3vh 0;
+    color: var(--medium_gray);
+}
+
+article button {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--almost_white);
+    background-color: var(--almost_black);
+    border-radius: 15px;
+    margin: 0 auto;
+    border-color: var(--almost_black);
+    cursor: pointer;
+}
+
+article button:hover {
+    color: var(--almost_black);
+    background-color: var(--almost_white);
+}
+
+article section {
+    display: flex;
+    width: 90vw;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+article section img {
+    width: 16vw;
+    margin: auto;
+}
+
+/* Desktop Changes */
+/* Desktop Changes */
+/* Desktop Changes */
+/* Desktop Changes */
+
+@media only screen and (min-width:1000px) {
+
+    /* Header */
+    /* Header */
+    /* Header */    
+
+    header {
+        width: 10%;
+        padding: 3.5vh 2.5vw;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    /* Menu */
+    /* Menu */
+
+    nav {
+        position: relative;
+        visibility: visible;
+        width: 90%;
+        height: 10vh;
+        background-color: var(--almost_white);
+    }
+
+    nav .window {
+        flex-direction: row;
+        width: 100%;
+        margin: auto;
+        padding: 0 2.5vw;
+    }
+
+    .window #x-mark {
+        display: none;
+    }
+
+    .window button {
+        position: relative;
+        width: 6vw;
+        margin: auto 0;
+        height: 4vh;
+        font-size: 14px;
+        margin-right: 1vw;
+        justify-content: center;
+    }
+
+    .window button img {
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    .window section {
+        flex-direction: row;
+        margin: auto;
+        margin-right: 0;
+    }
+
+    .log-in .register {
+        padding: 2.5vh 1.5vw;
+        border-radius: 12px;
+    }
+
+    /* Dropdown Menu */
+
+    .window ul {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        top: 8vh;
+        width: 8vw;
+        margin: 0;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .window .features-menu {
+        left: .5vw;
+        width: 8vw;
+    }
+
+    .window .company-menu {
+        left: 9.5vw;
+        width: 6vw;
+    }
+
+    .window li {
+        display: flex;
+        height: 30px;
+        align-items: center;
+        justify-content: start;
+        font-size: 12px;
+    }
+
+    .window li img {
+        height: 15px;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    /* Main */
+    /* Main */
+    /* Main */
+
+    /* Picture */
+    /* Picture */
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 0 7vw 7vw 7vw;
+    }
+
+    main picture {
+        width: 60vh;
+        height: 100%;
+    }
+
+    /* Text */
+    /* Text */
+
+    main article {
+        width: 630px;
+        margin: 0;
+        margin-top: auto;
+        margin-right: 50px;
+    }
+
+    article h1 {
+        font-weight: 700;
+        font-size: 10vh;
+        text-align: left;
+        color: var(--almost_black);
+    }
+
+    article p {
+        text-align: left;
+        margin: 6vh 0;
+        padding-right: 50px;
+    }
+
+    article button {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    article section {
+        display: flex;
+        width: 100%;
+        margin: 7vh auto 0 auto;
+    }
+
+    article section img {
+        padding: 10px 0 0 0;
+        width: auto;
+        height: auto;
+        margin: auto;
+        margin-left: 0;
+    }
+
+}
